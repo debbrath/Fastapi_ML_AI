@@ -42,9 +42,9 @@ def model_info():
 def predict_species(data: IrisInput):
     """Make prediction from input features"""
     features = np.array([[data.sepal_length, data.sepal_width, data.petal_length, data.petal_width]])
-    prediction = model.predict(features)[0]
-    predicted_class = class_names[prediction]
-    return {"predicted_class": predicted_class}
+    prediction = model.predict(features)[0] 
+    predicted_class = class_names[prediction] 
+    return {"predicted_class": predicted_class} 
 
 
 
